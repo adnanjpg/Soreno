@@ -9,7 +9,6 @@ declare module "react-router" {
   }
 }
 
-// @ts-expect-error resolved by Vite in dev, by wrangler alias in production
 import * as serverBuild from "virtual:react-router/server-build";
 
 const requestHandler = createRequestHandler(serverBuild, "production");
