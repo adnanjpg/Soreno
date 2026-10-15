@@ -10,10 +10,14 @@ export const meta: MetaFunction = () => [
   },
 ];
 
+const REPO_URL = "https://github.com/adnanjpg/Soreno";
+const DOWNLOAD_URL = `${REPO_URL}/releases/latest`;
+
 const navLinks = [
   { href: "#features", label: "Features" },
   { href: "#how-it-works", label: "How it works" },
   { href: "#faq", label: "FAQ" },
+  { href: REPO_URL, label: "GitHub" },
 ];
 
 const features = [
@@ -29,8 +33,8 @@ const features = [
   },
   {
     icon: <SparkleIcon />,
-    title: "Smart formatting",
-    desc: "On-device AI adds punctuation, numbers, capitalization, and structure.",
+    title: "Clean, punctuated text",
+    desc: "Transcripts come out punctuated and capitalized. Smarter on-device formatting is on the roadmap.",
   },
   {
     icon: <GlobeIcon />,
@@ -64,11 +68,15 @@ const faqs = [
   },
   {
     q: "How accurate is the dictation?",
-    a: "Soreno uses Apple Silicon optimized speech recognition plus local post-processing for punctuation and formatting.",
+    a: "Soreno uses NVIDIA Parakeet, a state-of-the-art speech model, running on your Mac's Neural Engine. It outputs punctuated, capitalized text.",
   },
   {
     q: "Is Soreno free?",
     a: "Yes. Soreno is free and open source under the MIT license.",
+  },
+  {
+    q: "Why does macOS warn me when I first open it?",
+    a: "Soreno isn't notarized by Apple yet. The first time you open it, go to System Settings > Privacy & Security and click Open Anyway. After that it opens normally.",
   },
   {
     q: "What languages are supported?",
@@ -167,7 +175,7 @@ function Nav() {
           ))}
         </ul>
 
-        <a href="#download" className="btn btn-primary site-nav__cta">
+        <a href={DOWNLOAD_URL} className="btn btn-primary site-nav__cta">
           Download
         </a>
       </div>
@@ -201,7 +209,7 @@ function Hero() {
           </p>
 
           <div className="hero__actions reveal">
-            <a href="#download" className="btn btn-primary">
+            <a href={DOWNLOAD_URL} className="btn btn-primary">
               <AppleIcon />
               Download for macOS
             </a>
@@ -211,7 +219,7 @@ function Hero() {
           </div>
 
           <p className="hero__small reveal">
-            macOS 13+ - Apple Silicon - Free and open source
+            macOS 14+ - Apple Silicon - Free and open source
           </p>
         </div>
 
@@ -386,12 +394,12 @@ function FinalCta() {
         <p className="cta-section__subtitle">
           Download Soreno for free. No cloud account and no setup flow.
         </p>
-        <a href="#" className="btn btn-primary btn-lg">
+        <a href={DOWNLOAD_URL} className="btn btn-primary btn-lg">
           <AppleIcon />
           Download for macOS
         </a>
         <p className="cta-section__note">
-          macOS 13+ - Apple Silicon - Free and open source
+          macOS 14+ - Apple Silicon - Free and open source
         </p>
       </div>
     </section>

@@ -12,7 +12,7 @@ Powered by [NVIDIA Parakeet TDT 0.6B](https://huggingface.co/nvidia/parakeet-tdt
 - **Fast and accurate** — Parakeet TDT 0.6B runs on Apple Neural Engine via CoreML
 - **Types into any app** — transcribed text is pasted directly into the active application
 - **Dynamic waveform** — floating pill shows a live audio waveform while recording
-- **Smart formatting built in** — on-device cleanup improves punctuation, numbers, and structure
+- **Punctuated output** — transcripts come out punctuated and capitalized
 - **Fully local** — everything runs on-device, nothing is sent to the cloud
 
 ## Requirements
@@ -21,6 +21,12 @@ Powered by [NVIDIA Parakeet TDT 0.6B](https://huggingface.co/nvidia/parakeet-tdt
 - Apple Silicon Mac (M1 or later recommended for Neural Engine)
 
 ## Install
+
+### Download
+
+Grab the latest `Soreno.dmg` from [Releases](https://github.com/adnanjpg/Soreno/releases/latest), open it, and drag Soreno to Applications.
+
+Soreno isn't notarized by Apple yet, so macOS blocks the first launch. Open **System Settings > Privacy & Security** and click **Open Anyway** (you only need to do this once).
 
 ### Build from source
 
