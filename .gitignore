@@ -1,0 +1,31 @@
+# Swift / SPM
+.build/
+.swiftpm/
+Package.resolved
+*.xcodeproj/
+xcuserdata/
+DerivedData/
+*.o
+*.dSYM/
+
+# App bundle output
+dist/
+
+# macOS
+.DS_Store
+*.swp
+*~
+
+# Claude Code
+.claude/
+
+# Old Electron/Python (no longer used)
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.venv/
+venv/
+.env
+*.so
+node_modules/

@@ -1,0 +1,15 @@
+{
+  "name": "soreno-website",
+  "main": "workers/app.ts",
+  "compatibility_date": "2025-04-01",
+  "assets": {
+    "directory": "build/client"
+  },
+  "alias": {
+    "virtual:react-router/server-build": "./build/server/index.js"
+  },
+  "routes": [
+    { "pattern": "soreno.app", "custom_domain": true },
+    { "pattern": "www.soreno.app", "custom_domain": true }
+  ]
+}

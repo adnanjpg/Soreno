@@ -1,0 +1,6 @@
+<svg width="200" height="180" viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Soreno quote logo">
+  <path d="M22 0C6 0 -6 18 -6 42C-6 66 12 82 34 82C38 82 42 81 45 80C41 105 22 123 2 130L14 140C56 128 82 92 82 50C82 20 58 0 34 0Z" fill="#F2ECE4"/>
+  <path d="M114 0C98 0 86 18 86 42C86 66 104 82 126 82C130 82 134 81 137 80C133 105 114 123 94 130L106 140C148 128 174 92 174 50C174 20 150 0 126 0Z" fill="#F2ECE4"/>
+  <circle cx="18" cy="40" r="11" fill="#D4A26A"/>
+  <rect x="0" y="160" width="200" height="12" rx="6" fill="#F2ECE4"/>
+</svg>
